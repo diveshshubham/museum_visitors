@@ -1,0 +1,33 @@
+{
+  "name": "code_test",
+  "version": "1.0.0",
+  "description": "-install mongo db locally to your system or configure mlab  --see sample_req_res.txt to see sample request and response -check screenshot folder to see test results -I would recommend to use postman to test your API's -unzip the file go to root directory and open terminal and write the following command- ----- npm install ---- ------node index.js-----",
+  "main": "index.js",
+  "scripts": {
+    "server-dev": "cross-env NODE_ENV=prod node server.js",
+    "client-dev": "npm start --prefix client",
+    "test": "jest TEST_ENV=test tests/server.test.js"
+  },
+  "jest": {
+    "setupFiles": [
+      "dotenv/config"
+    ]
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.8.0",
+    "faker": "^5.5.3",
+    "jest": "^27.4.3",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.11.8",
+    "supertest": "^6.1.6",
+    "unirest": "^0.6.0"
+  },
+  "devDependencies": {}
+}
