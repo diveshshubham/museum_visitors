@@ -58,6 +58,7 @@ Authentication Required : No
 ### HTTP Request
 
 `GET /api/visitors?date={date in miliseconds}`
+`GET /api/visitors?date={date in miliseconds}&ignore={name_of_the_ignored_museum}`
 
 ### QueryString Parameter
 
